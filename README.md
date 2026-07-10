@@ -10,7 +10,7 @@ An interactive bioinformatics platform for **lung adenocarcinoma (LUAD) predicti
 
 🚀 Streamlit
 
-> Coming Soon (Deployment in Progress)
+> https://joyful-luad-platform.streamlit.app/Model_Performance
 
 GitHub Repository
 
