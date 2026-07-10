@@ -1,38 +1,39 @@
 # 🫁 Lung Cancer Bioinformatics Platform
 
+![](image/home.png)
+
 > **Machine Learning × SHAP × TCGA-LUAD × Precision Medicine**
 
-An interactive bioinformatics platform for **lung adenocarcinoma (LUAD) prediction** using **Random Forest** and **10 SHAP-selected gene expression features**.
+An interactive bioinformatics platform for **Lung Adenocarcinoma (LUAD) prediction** using **Random Forest** and **10 SHAP-selected gene expression features**.
 
 ---
 
-## 🌐 Live Demo
+# 🌐 Live Demo
 
-🚀 Streamlit
+### 🚀 Streamlit
 
-> https://joyful-luad-platform.streamlit.app/Model_Performance
+https://joyful-luad-platform.streamlit.app/
 
-GitHub Repository
+### 💻 GitHub Repository
 
-> https://github.com/joyful-0410/LUAD生物資訊學平台
+https://github.com/joyful-0410/LUAD-Bioinformatics-Platform
 
 ---
 
 # 📖 Project Overview
 
-Lung adenocarcinoma (LUAD) is one of the most common and deadly types of lung cancer worldwide.
+Lung adenocarcinoma (LUAD) is one of the leading causes of cancer-related deaths worldwide.
 
-This project aims to develop an interpretable machine learning platform that predicts LUAD risk using gene expression profiles.
+This project develops an **interactive bioinformatics platform** that combines **Machine Learning**, **Explainable AI (SHAP)** and **Gene Expression Analysis** into a single web application.
 
-Unlike a traditional prediction model, this platform integrates
+Unlike conventional prediction models, this platform allows users to explore:
 
-- Machine Learning
-- SHAP Explainability
-- Gene Information
-- Model Performance
-- Interactive Visualization
-
-into a single web application.
+- 🤖 LUAD Risk Prediction
+- 📊 Model Performance
+- 🧬 SHAP Explainability
+- 🔬 Gene Explorer
+- 📚 Dataset Workflow
+- 👤 About Project
 
 ---
 
@@ -40,11 +41,11 @@ into a single web application.
 
 ## 🤖 LUAD Prediction
 
-- Random Forest classifier
-- 10-gene expression input
-- Probability prediction
-- High / Low Risk classification
-- AI interpretation
+- Random Forest Classifier
+- 10 Gene Expression Inputs
+- High / Low Risk Prediction
+- Prediction Probability
+- Interactive Interface
 
 ---
 
@@ -56,18 +57,19 @@ into a single web application.
 - F1-score
 - ROC Curve
 - Confusion Matrix
+- Classification Report
 
 ---
 
 ## 🧬 SHAP Analysis
 
-Model explainability using SHAP.
+Model Explainability using SHAP.
 
-Includes
+Including
 
 - SHAP Feature Importance
 - Top 10 Gene Ranking
-- Biological interpretation
+- Biological Interpretation
 
 ---
 
@@ -77,22 +79,22 @@ Detailed information for each selected gene.
 
 Including
 
-- Biological Function
+- Gene Function
 - Cancer Association
-- LUAD relevance
-- Interpretation
+- LUAD Relevance
+- Biological Interpretation
 
 ---
 
-## 📚 Dataset
-
-Dataset Source
-
-- TCGA-LUAD
+## 📚 Dataset Workflow
 
 Machine Learning Pipeline
 
 ```
+TCGA-LUAD
+
+↓
+
 Gene Expression
 
 ↓
@@ -101,7 +103,7 @@ Data Preprocessing
 
 ↓
 
-Feature Selection
+Feature Selection (SHAP)
 
 ↓
 
@@ -109,11 +111,11 @@ Random Forest
 
 ↓
 
-Prediction
+Risk Prediction
 
 ↓
 
-SHAP Interpretation
+Model Interpretation
 ```
 
 ---
@@ -137,19 +139,23 @@ SHAP Interpretation
 
 # 🧠 Machine Learning
 
-Algorithm
+### Algorithm
 
 - Random Forest
 
-Feature Selection
+### Feature Selection
 
 - SHAP
 
-Input
+### Dataset
+
+- TCGA-LUAD
+
+### Input
 
 - 10 Gene Expression Features
 
-Output
+### Output
 
 - LUAD Risk Prediction
 
@@ -157,7 +163,7 @@ Output
 
 # 📂 Project Structure
 
-```
+```text
 LUAD_Bioinformatics_Platform
 
 ├── app.py
@@ -166,12 +172,13 @@ LUAD_Bioinformatics_Platform
 │   ├── Model Performance
 │   ├── SHAP Analysis
 │   ├── Gene Explorer
-│   ├── Dataset
+│   ├── Dataset Workflow
 │   └── About
 │
 ├── data
 ├── assets
 ├── figures
+├── image
 ├── utils.py
 ├── model.pkl
 ├── scaler.pkl
@@ -183,13 +190,13 @@ LUAD_Bioinformatics_Platform
 
 # 💻 Installation
 
-Clone repository
+Clone Repository
 
 ```bash
-git clone https://github.com/joyful-0410/LUAD生物資訊學平台.git
+git clone https://github.com/joyful-0410/LUAD-Bioinformatics-Platform.git
 ```
 
-Install packages
+Install Packages
 
 ```bash
 pip install -r requirements.txt
@@ -203,15 +210,47 @@ streamlit run app.py
 
 ---
 
-# 📷 Platform Modules
+# 📷 Platform Preview
 
-- 🏠 Home
-- 🤖 Prediction
-- 📊 Model Performance
-- 🧬 SHAP Analysis
-- 🔬 Gene Explorer
-- 📚 Dataset
-- 👤 About
+## 🏠 Home
+
+![](image/home.png)
+
+---
+
+## 🤖 Prediction
+
+![](image/prediction.png)
+
+---
+
+## 📊 Model Performance
+
+![](image/performance.png)
+
+---
+
+## 🧬 SHAP Analysis
+
+![](image/shap.png)
+
+---
+
+## 🔬 Gene Explorer
+
+![](image/gene_explorer.png)
+
+---
+
+## 📚 Dataset Workflow
+
+![](image/workflow.png)
+
+---
+
+## 👤 About
+
+![](image/about.png)
 
 ---
 
@@ -219,25 +258,41 @@ streamlit run app.py
 
 This project was developed as an undergraduate bioinformatics project.
 
-The objective is to combine
+The goal is to integrate
 
 - Cancer Biology
 - Machine Learning
-- Explainable AI
+- Explainable AI (SHAP)
 - Bioinformatics
 
-into an interactive platform for educational and research purposes.
+into an interactive educational and research platform.
 
 ---
 
 # 🚀 Future Work
 
-- Deep Learning models
-- Multi-cancer prediction
-- Survival analysis
-- Drug response prediction
-- TRBP2 module integration
-- Clinical decision support
+Future improvements include:
+
+- Deep Learning Models
+- Multi-Cancer Prediction
+- Survival Analysis
+- Drug Response Prediction
+- Clinical Decision Support System
+- TRBP2 Functional Module
+- RNA Binding Protein Analysis
+
+---
+
+# 🛠 Tech Stack
+
+- Python
+- Streamlit
+- Scikit-learn
+- SHAP
+- Pandas
+- NumPy
+- Matplotlib
+- Joblib
 
 ---
 
@@ -257,18 +312,20 @@ Taiwan
 
 This project is intended for
 
-- Academic research
-- Educational purposes
+- Academic Research
+- Educational Purposes
 
-Not for clinical diagnosis.
+**Not for clinical diagnosis or medical decision making.**
 
 ---
 
-# ⭐ Acknowledgement
+# ⭐ Acknowledgements
 
 - TCGA
+- NIH
 - Streamlit
 - Scikit-learn
 - SHAP
 - Pandas
 - NumPy
+- Matplotlib
