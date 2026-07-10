@@ -44,12 +44,48 @@ def inject_css():
     .hero {padding: 2rem; border-radius: 28px; background: linear-gradient(135deg,#08203e 0%,#0b4f6c 55%,#00a6a6 100%); color: white; box-shadow: 0 12px 30px rgba(0,0,0,.12); margin-bottom: 1.2rem;}
     .hero h1 {font-size: 3.05rem; line-height: 1.08; margin-bottom: .6rem; font-weight: 900;}
     .hero p {font-size: 1.2rem; opacity: .95;}
-    .card {padding:1.2rem; border-radius:20px; border:1px solid #dce8ef; background:linear-gradient(180deg,#ffffff,#f7fbfd); box-shadow:0 8px 20px rgba(8,32,62,.06); height: 100%;}
-    .card h3 {margin-top:0; color:#12355b;}
+    .card {
+    padding:1.2rem;
+    border-radius:20px;
+    border:1px solid #dce8ef;
+    background:linear-gradient(180deg,#ffffff,#f7fbfd);
+    box-shadow:0 8px 20px rgba(8,32,62,.06);
+    height:100%;
+    color:#1f2937 !important;
+}
+
+.card h1,
+.card h2,
+.card h3,
+.card h4,
+.card h5,
+.card p,
+.card span,
+.card div,
+.card li,
+.card b,
+.card strong {
+    color:#1f2937 !important;
+}
+
+.card h3 {
+    margin-top:0;
+    color:#12355b !important;
+}
     .muted {color:#60717d; font-size:.95rem;}
     .gene-pill {display:inline-block; padding:7px 12px; border-radius:999px; background:#e7f5ff; border:1px solid #b6e0fe; color:#075985; font-weight:700; margin:4px;}
     .risk-high {padding:1.1rem; border-radius:18px; background:#fff0f0; border:1px solid #ffb4b4; color:#8a1f1f; font-size:1.2rem; font-weight:800;}
     .risk-low {padding:1.1rem; border-radius:18px; background:#ecfff3; border:1px solid #b7efc5; color:#176b35; font-size:1.2rem; font-weight:800;}
-    .note {padding:1rem; border-radius:16px; background:#f0f7ff; border-left:6px solid #1d75bd;}
+    .note {
+    padding:1rem;
+    border-radius:16px;
+    background:#f0f7ff;
+    border-left:6px solid #1d75bd;
+    color:#1f2937 !important;
+}
+
+.note * {
+    color:#1f2937 !important;
+}
     </style>
     ''', unsafe_allow_html=True)
