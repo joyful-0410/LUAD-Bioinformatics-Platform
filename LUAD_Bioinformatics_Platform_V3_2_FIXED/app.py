@@ -9,7 +9,7 @@ st.markdown('''
 <div class="hero">
   <h1>🫁 Lung Cancer Bioinformatics Platform</h1>
   <p>Machine Learning × SHAP × TCGA-LUAD × Precision Medicine</p>
-  <p>一個將肺腺癌基因表達資料、Random Forest 模型與 SHAP 可解釋性整合成互動式研究平台的作品。</p>
+  <p>整合 TCGA-LUAD 基因表達資料、Random Forest 機器學習與 SHAP 可解釋 AI 的肺腺癌生物資訊互動平台。</p>
 </div>
 ''', unsafe_allow_html=True)
 
