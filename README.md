@@ -1,20 +1,32 @@
 # 🫁 Lung Cancer Bioinformatics Platform
 
-![](image/home.png)
-
 > **Machine Learning × SHAP × TCGA-LUAD × Precision Medicine**
 
-An interactive bioinformatics platform for **Lung Adenocarcinoma (LUAD) prediction** using **Random Forest** and **10 SHAP-selected gene expression features**.
+An interactive bioinformatics platform for **Lung Adenocarcinoma (LUAD)** prediction using **Random Forest** and **10 SHAP-selected gene expression features**.
+
+---
+
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+
+![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-red)
+
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Random%20Forest-success)
+
+![Explainable AI](https://img.shields.io/badge/Explainable%20AI-SHAP-orange)
+
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 
 ---
 
 # 🌐 Live Demo
 
-### 🚀 Streamlit
+## 🚀 Streamlit
 
 https://joyful-luad-platform.streamlit.app/
 
-### 💻 GitHub Repository
+---
+
+## 💻 GitHub Repository
 
 https://github.com/joyful-0410/LUAD-Bioinformatics-Platform
 
@@ -22,108 +34,81 @@ https://github.com/joyful-0410/LUAD-Bioinformatics-Platform
 
 # 📖 Project Overview
 
-Lung adenocarcinoma (LUAD) is one of the leading causes of cancer-related deaths worldwide.
+Lung adenocarcinoma (LUAD) is the most common subtype of non-small cell lung cancer (NSCLC).
 
-This project develops an **interactive bioinformatics platform** that combines **Machine Learning**, **Explainable AI (SHAP)** and **Gene Expression Analysis** into a single web application.
+This project develops an interactive bioinformatics platform that integrates:
 
-Unlike conventional prediction models, this platform allows users to explore:
+- Machine Learning
+- Explainable AI (SHAP)
+- Gene Functional Interpretation
+- Cancer Biology
+- Interactive Visualization
+
+Unlike a conventional prediction model, this platform combines prediction, biological interpretation and educational visualization into one complete web application.
+
+---
+
+# ✨ Platform Features
 
 - 🤖 LUAD Risk Prediction
-- 📊 Model Performance
-- 🧬 SHAP Explainability
+- 📈 Model Performance Evaluation
+- 🧬 SHAP Explainable AI
 - 🔬 Gene Explorer
-- 📚 Dataset Workflow
-- 👤 About Project
+- 📂 Dataset Workflow
+- 👨‍💻 About & Development History
 
 ---
 
-# ✨ Features
-
-## 🤖 LUAD Prediction
-
-- Random Forest Classifier
-- 10 Gene Expression Inputs
-- High / Low Risk Prediction
-- Prediction Probability
-- Interactive Interface
+# 🖥 Platform Screenshots
 
 ---
 
-## 📊 Model Performance
+## 🏠 Home
 
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- ROC Curve
-- Confusion Matrix
-- Classification Report
+![Home](image/home.png)
+
+---
+
+## 🤖 Prediction
+
+![Prediction](image/prediction.png)
+
+---
+
+## 📈 Model Performance
+
+![Performance](image/performance.png)
 
 ---
 
 ## 🧬 SHAP Analysis
 
-Model Explainability using SHAP.
-
-Including
-
-- SHAP Feature Importance
-- Top 10 Gene Ranking
-- Biological Interpretation
+![SHAP](image/shap.png)
 
 ---
 
 ## 🔬 Gene Explorer
 
-Detailed information for each selected gene.
-
-Including
-
-- Gene Function
-- Cancer Association
-- LUAD Relevance
-- Biological Interpretation
+![Gene Explorer](image/gene_explorer.png)
 
 ---
 
-## 📚 Dataset Workflow
+## 📂 Dataset Workflow
 
-Machine Learning Pipeline
+![Workflow](image/workflow.png)
 
-```
-TCGA-LUAD
+---
 
-↓
+## 👨‍💻 About
 
-Gene Expression
-
-↓
-
-Data Preprocessing
-
-↓
-
-Feature Selection (SHAP)
-
-↓
-
-Random Forest
-
-↓
-
-Risk Prediction
-
-↓
-
-Model Interpretation
-```
+![About](image/about.png)
 
 ---
 
 # 🧬 Selected Gene Panel
 
-| Gene | Biological Function |
-|------|----------------------|
+| Gene | Function |
+|------|----------|
 | SLC34A2 | Lung epithelial differentiation |
 | MUC16 | Tumor marker (CA125) |
 | ANLN | Cell division |
@@ -137,33 +122,58 @@ Model Interpretation
 
 ---
 
-# 🧠 Machine Learning
+# 🤖 Machine Learning
 
-### Algorithm
+### Model
 
-- Random Forest
+Random Forest Classifier
 
 ### Feature Selection
 
-- SHAP
-
-### Dataset
-
-- TCGA-LUAD
+SHAP Explainable AI
 
 ### Input
 
-- 10 Gene Expression Features
+10 Gene Expression Features
 
 ### Output
 
-- LUAD Risk Prediction
+LUAD Risk Prediction
+
+---
+
+# 📊 Dataset
+
+Dataset
+
+TCGA-LUAD
+
+Samples
+
+515
+
+Input Features
+
+10 Gene Expression Features
+
+---
+
+# 🧠 Tech Stack
+
+- Python
+- Streamlit
+- Scikit-learn
+- SHAP
+- Pandas
+- NumPy
+- Plotly
+- Matplotlib
 
 ---
 
 # 📂 Project Structure
 
-```text
+```
 LUAD_Bioinformatics_Platform
 
 ├── app.py
@@ -176,19 +186,17 @@ LUAD_Bioinformatics_Platform
 │   └── About
 │
 ├── data
-├── assets
-├── figures
 ├── image
-├── utils.py
 ├── model.pkl
 ├── scaler.pkl
+├── utils.py
 ├── requirements.txt
 └── README.md
 ```
 
 ---
 
-# 💻 Installation
+# ⚙️ Installation
 
 Clone Repository
 
@@ -210,89 +218,51 @@ streamlit run app.py
 
 ---
 
-# 📷 Platform Preview
+# 📈 Development History
 
-## 🏠 Home
+This project has evolved through multiple development stages.
 
-![](image/home.png)
+Version 1 was the original undergraduate research prototype.
 
----
+Version 2 was completely redesigned into a multi-page bioinformatics platform with improved machine learning visualization, explainable AI modules, and interactive biological interpretation.
 
-## 🤖 Prediction
-
-![](image/prediction.png)
+> **Version 1 is preserved for learning and development history only. Some contents of the original poster and prototype website are preliminary and should not be regarded as the final scientific version.**
 
 ---
 
-## 📊 Model Performance
+## 🔄 Platform Evolution
 
-![](image/performance.png)
-
----
-
-## 🧬 SHAP Analysis
-
-![](image/shap.png)
+![Development](image/different.png)
 
 ---
 
-## 🔬 Gene Explorer
+### Version 1 Prototype
 
-![](image/gene_explorer.png)
+Original undergraduate research website
 
----
-
-## 📚 Dataset Workflow
-
-![](image/workflow.png)
+https://github.com/joyful-0410/lung-cancer-prediction1
 
 ---
 
-## 👤 About
+### Version 2 Current Platform
 
-![](image/about.png)
+Current Streamlit Platform
 
----
-
-# 🔬 Research Background
-
-This project was developed as an undergraduate bioinformatics project.
-
-The goal is to integrate
-
-- Cancer Biology
-- Machine Learning
-- Explainable AI (SHAP)
-- Bioinformatics
-
-into an interactive educational and research platform.
+https://joyful-luad-platform.streamlit.app/
 
 ---
 
-# 🚀 Future Work
+# 🚀 Future Development
 
-Future improvements include:
+Planned future extensions include:
 
 - Deep Learning Models
-- Multi-Cancer Prediction
 - Survival Analysis
 - Drug Response Prediction
-- Clinical Decision Support System
-- TRBP2 Functional Module
-- RNA Binding Protein Analysis
-
----
-
-# 🛠 Tech Stack
-
-- Python
-- Streamlit
-- Scikit-learn
-- SHAP
-- Pandas
-- NumPy
-- Matplotlib
-- Joblib
+- TRBP2 Module
+- RNA Binding Protein Module
+- Multi-Cancer Prediction
+- Clinical Decision Support
 
 ---
 
@@ -306,26 +276,37 @@ Chang Jung Christian University
 
 Taiwan
 
+Research Interests
+
+- Cancer Bioinformatics
+- Explainable AI
+- Machine Learning
+- Precision Medicine
+
 ---
 
-# 📄 License
+# ⚠️ Disclaimer
 
-This project is intended for
+This platform is intended for:
 
 - Academic Research
-- Educational Purposes
+- Educational Demonstration
+- Bioinformatics Learning
 
-**Not for clinical diagnosis or medical decision making.**
+It is **NOT** intended for clinical diagnosis or medical decision making.
 
 ---
 
-# ⭐ Acknowledgements
+# 🙏 Acknowledgements
 
 - TCGA
-- NIH
 - Streamlit
 - Scikit-learn
 - SHAP
 - Pandas
 - NumPy
-- Matplotlib
+- Plotly
+
+---
+
+⭐ If you like this project, please consider giving it a Star.
